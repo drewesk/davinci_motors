@@ -1,28 +1,28 @@
 <h1>New Car</h1>
 
-<%= form_for(@car) do |f| %>
+<%= form_for(@car) do |new_car| %>
   <div class="field">
-    <%= f.label :make %>
-    <%= f.text_field :make %>
+    <%= new_car.label :make %>
+    <%= new_car.text_field :make %>
   </div>
 
   <div class="field">
-    <%= f.label :model %>
-    <%= f.text_field :model %>
+    <%= new_car.label :model %>
+    <%= new_car.text_field :model %>
   </div>
 
   <div class="field">
-    <%= f.label :price %>
-    <%= f.text_field :price %>
+    <%= new_car.label :price %>
+    <%= new_car.text_field :price %>
   </div>
 
   <div class="field">
-    <%= f.label :year %>
-    <%= f.text_field :year %>
+    <%= new_car.label :year %>
+    <%= new_car.text_field :year %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <%= new_car.submit %>
   </div>
 <% end %>
 

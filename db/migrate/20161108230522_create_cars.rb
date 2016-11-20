@@ -1,6 +1,6 @@
 class CreateCars < ActiveRecord::Migration[5.0]
   def change
-    create_table :cars do |t|
+    create_table :car do |t|
       t.string :make
       t.string :model
       t.integer :year
